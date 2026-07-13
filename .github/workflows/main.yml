@@ -1,0 +1,54 @@
+name: Main
+
+on:
+  workflow_dispatch:
+    inputs:
+      ipa_link:
+        description: 'IPA Link'
+        required: true
+        type: string
+      remove_music:
+        description: 'Remove music?'
+        default: false
+        type: boolean
+      add_hyniswizzlefps:
+        description: 'Add HyniSwizzleFPS?'
+        default: false
+        type: boolean
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Setup dependencies
+      run: |
+        echo TODO
+        
+    - name: Download IPA
+      run: |
+        echo TODO
+    
+    - name: Extract IPA
+      run: |
+        echo TODO
+    
+    - name: Add HynisLoader
+      run: |
+        echo TODO
+    
+    - name: Add HyniSwizzleFPS
+      run: |
+        echo TODO
+    
+    - name: Remove music
+      run: |
+        echo TODO
+
+    - name: Package IPA
+      run: |
+        echo TODO
+
+    - name: Upload IPA
+      run: |
+        echo TODO
